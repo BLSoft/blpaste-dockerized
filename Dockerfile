@@ -10,4 +10,5 @@ git clone https://git.blsoft.hu/barrow099/blpaste.git .
 
 COPY ./mysql.cnf ./
 COPY ./settings.py ./blpaste/settings.py
+COPY ./httpd.conf /etc/apache2/httpd.conf
 RUN pip install -r requirements.txt
