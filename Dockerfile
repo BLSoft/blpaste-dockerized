@@ -12,3 +12,5 @@ COPY ./mysql.cnf ./
 COPY ./settings.py ./blpaste/settings.py
 COPY ./httpd.conf /etc/apache2/httpd.conf
 RUN pip install -r requirements.txt
+
+CMD startup.sh
