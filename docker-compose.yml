@@ -1,0 +1,11 @@
+version: '3'
+services:
+  blpaste-web:
+    build: .
+    image: blpaste:test
+    env_file:
+      - ./blpaste.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/staticdir
