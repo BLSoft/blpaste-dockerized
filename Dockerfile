@@ -8,7 +8,7 @@ apk update && \
 apk upgrade --no-cache && \
 apk add --no-cache git bash mariadb-dev libev-dev curl && \
 apk add --no-cache --virtual .build-deps gcc musl-dev && \
-git clone https://git.blsoft.hu/barrow099/blpaste /app && \
+git clone https://git.blsoft.hu/blsoft/blpaste.git /app && \
 chmod +x startup.sh && \
 chmod +x update.sh && \
 pip3 install -r requirements.txt && \
